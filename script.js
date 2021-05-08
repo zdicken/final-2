@@ -2,13 +2,13 @@ var data;
 $(document).ready(function(){
     $.getJSON("data/iceCreamShop/data.json", function(responseData){
         data = responseData;
-
-        console.log(data);
+         loadEverything();
     }).fail(function(){
         console.log("An error has occurred.");
     });
 });
 
+function loadEverything() {
 var element = document.getElementsByClassName("header");
 
 for(var i = 0; i < element.length; i++) {
@@ -29,6 +29,7 @@ if(document.getElementsByClassName("tagline").length === 1) {
         flavors[i].children[1].innerHTML = data.flavors[i].flavor;
         flavors[i].children[2].innerHTML = "$" + data.flavors[i].cost;
     }
+}
 }
 
 function showFlavor(num) {
