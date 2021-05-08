@@ -1,0 +1,408 @@
+@font-face {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/aleo/v4/c4mg1nF8G8_syKbr9DU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchm-A.ttf) format('truetype');
+}
+body {
+  background-color: #fffcf8;
+  margin: 0;
+}
+.page {
+  min-height: 800px;
+}
+.contentHeading {
+  border-bottom: 1px black solid;
+  font-family: "Abril Fatface", cursive;
+  font-size: 36px;
+  width: fit-content;
+  margin-bottom: 32px;
+}
+.header {
+  font-size: 28px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.popUpMargin {
+  margin: 10px 20px;
+}
+@media screen and (max-width: 600px) {
+  .links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc0cb;
+  }
+  .dropDownMenu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .dropDownMenu i {
+    color: #FE70A5;
+  }
+}
+nav {
+  width: 800px;
+  overflow: hidden;
+  margin: 10px auto 0;
+}
+nav .links {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .links a {
+  font-size: 18px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+nav .links a:hover {
+  color: #FE70A5;
+}
+nav i {
+  padding-right: 8px;
+}
+.white {
+  color: white;
+  border-bottom: 1px white solid;
+}
+.white a {
+  color: white;
+}
+.black {
+  color: black;
+  border-bottom: 1px black solid;
+}
+.black a {
+  color: black;
+}
+@media (max-width: 600px) {
+  nav {
+    width: 90%;
+  }
+}
+footer {
+  font-size: 24px;
+  text-align: center;
+  background-color: #FE70A5;
+  height: 300px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 220px;
+  justify-content: space-between;
+}
+footer .footerContent .info {
+  font-size: 14px;
+}
+footer .footerContent .info p {
+  margin-bottom: 10px;
+}
+footer .footerContent .copyright {
+  font-size: 12px;
+  opacity: 50%;
+  margin-top: 24px;
+}
+footer .footerContent .socials {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerContent .socials i:hover {
+  color: black;
+}
+p {
+  margin: 0;
+}
+a {
+  cursor: pointer;
+}
+.home {
+  background-image: linear-gradient(rgba(231, 84, 128, 0.5), rgba(231, 84, 128, 0.5)), url("../data/iceCreamShop/hoemImage2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: #ffc0cb;
+  height: 500px;
+  font-family: 'Aleo', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .homeContent {
+  height: 200px;
+  margin-top: 100px;
+  color: white;
+  width: 600px;
+}
+.home .tagline {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.home .button {
+  background-color: #FE70A5;
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+}
+.home .description {
+  margin-bottom: 30px;
+}
+.homeImage {
+  width: 100%;
+  height: 500px;
+  background-image: url("../data/iceCreamShop/homeImage1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.text {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "aleo", cursive;
+}
+.text .textContent {
+  width: 50%;
+}
+.text .textContent p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 600px) {
+  .description {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+.about {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 50px auto;
+}
+.about .jsAbout,
+.about p:nth-child(3),
+.about li {
+  font-family: 'Aleo', serif;
+}
+.about .aboutContent {
+  width: 45%;
+}
+.about .aboutImage {
+  background-image: url("../data/iceCreamShop/aboutImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 45%;
+  height: 450px;
+}
+.about li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.about p:nth-child(3) {
+  margin-top: 32px;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  .about {
+    width: 90%;
+    flex-direction: column;
+  }
+  .about .aboutContent,
+  .about .aboutImage {
+    width: 100%;
+  }
+  .about .aboutImage {
+    margin-bottom: 40px;
+  }
+}
+.flavors {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto 50px auto;
+}
+.flavors .flavor {
+  width: 300px;
+  margin-bottom: 73px;
+  cursor: pointer;
+}
+.flavors .price {
+  font-family: "Aleo", serif;
+  font-size: 18px;
+}
+.flavors .name {
+  font-family: "Abril Fatface", serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.flavors .image {
+  background-image: url("../data/iceCreamShop/flavorImages/icecream1.jpg");
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.flavors .flavorsContent {
+  width: 100%;
+}
+.popUp {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(103, 103, 103, 0.66);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Aleo", serif;
+}
+.popUp .popUpContent {
+  width: 340px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 20px;
+}
+.popUp .popUpContent .popUpImage {
+  width: 300px;
+  background-position: center;
+}
+.popUp .popUpContent .popUpName {
+  font-family: "Abril Fatface", serif;
+  font-size: 28px;
+}
+.popUp .popUpContent .popUpPrice {
+  font-size: 18px;
+}
+.popUp .popUpContent .popUpPrice p {
+  margin-top: 10px;
+}
+.popUp .popUpContent .popUpDescription {
+  font-size: 14px;
+}
+.popUp .popUpContent .xButton {
+  background-color: #FE70A5;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  margin: 8px;
+  cursor: pointer;
+  border: transparent;
+  font-family: "Aleo", serif;
+}
+.hide {
+  display: none !important;
+}
+@media (max-width: 600px) {
+  .flavors {
+    width: 90%;
+    flex-direction: column;
+  }
+  .flavors .flavorsContent {
+    width: 100%;
+  }
+  .flavors .flavor {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+.contact {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 50px auto;
+}
+.contact form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.contact form input,
+.contact form textarea {
+  font-family: 'Aleo', serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: transparent;
+  background-color: #F1F1F1;
+  padding: 10px;
+}
+.contact form textarea {
+  padding-bottom: 50px;
+}
+.contact form button {
+  background-color: #FE70A5;
+  border: transparent;
+  color: white;
+  width: 100px;
+  padding: 10px;
+}
+.contact .contactImage {
+  background-image: url("../map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 45%;
+  height: 450px;
+}
+@media (max-width: 600px) {
+  .contact {
+    width: 90%;
+    flex-direction: column;
+  }
+  .contact .contactContent,
+  .contact .contactImage {
+    width: 100%;
+  }
+  .contact .contactImage {
+    margin-bottom: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
