@@ -41,6 +41,9 @@ body {
   margin: 10px 20px;
 }
 @media screen and (max-width: 600px) {
+  nav {
+    width: 90%;
+  }
   .links {
     position: fixed;
     top: 0;
@@ -53,7 +56,7 @@ body {
     background-color: #ffc0cb;
   }
   .dropDownMenu {
-    display: block;
+    display: block!important;
     position: absolute;
     top: 0;
     right: 0;
@@ -87,6 +90,9 @@ nav .links a:hover {
 nav i {
   padding-right: 8px;
 }
+.dropDownMenu {
+  display: none;
+}
 .white {
   color: white;
   border-bottom: 1px white solid;
@@ -100,11 +106,6 @@ nav i {
 }
 .black a {
   color: black;
-}
-@media (max-width: 600px) {
-  nav {
-    width: 90%;
-  }
 }
 footer {
   font-size: 24px;
